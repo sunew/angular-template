@@ -1,0 +1,24 @@
+<div class="container" >
+  
+  <div class="row">
+    <ng-include src="getPartialTemplate('header')"></ng-include>
+  </div>
+  <div class="row">
+      <div class="col-md-10">
+          <div class="chatarea"  chatconstructor></div>
+
+      <div id='videopanel' class="videochatarea" videoconstructor>
+
+     </div>
+          <h1 translate>Start wizard</h1>
+          <input class="btn btn-lg btn-info" type="button" name="start" value="Start" ng-click="startWizard()">
+
+      </div>
+      <div class="col-md-2">
+        <ng-include src="getPartialTemplate('rightmenu')"></ng-include>
+      </div>
+  </div>
+
+  <ng-include src="getPartialTemplate('debug')"></ng-include>
+
+</div>

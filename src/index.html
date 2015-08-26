@@ -1,0 +1,72 @@
+    <!DOCTYPE html>
+<!--[if lt IE 7]>      <html xmlns:ng="http://angularjs.org" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html xmlns:ng="http://angularjs.org" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html xmlns:ng="http://angularjs.org" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html xmlns:ng="http://angularjs.org"
+                             class="no-js"
+                             ng-app="myNgApp"
+                             ng-strict-di
+                             > <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="language" content="danish">
+    <meta name="description" value="description here">
+    <meta name="keywords" value="blabla blabla2">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mytitle</title>
+
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /> -->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css styles/zitelabapp.css -->
+    <link rel="stylesheet" href="styles/mystyles.css">
+    <!-- endbuild -->
+
+  </head>
+  <body ng-controller="MainCtrl">
+    <!--[if lt IE 8]>
+      <p class="browsehappy">Du anvender en <strong>forældet</strong> browser. <a href="http://browsehappy.com/">Opgrader din browser</a> for at forbedre din oplevelse af denne side.</p>
+    <![endif]-->
+
+    <div id="myAppContent" ng-view=""></div>
+sune
+
+    <div class="row" ng-show="showDebug">
+      <h4>Debug info</h4>
+        <div class="col-sm-4 form-group">
+          <pre>mymainctrlvar: {{mymainctrlvar | json}}</pre>
+        </div>
+    </div>
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-ui-utils/ui-utils.js"></script>
+    <script src="bower_components/respond/dest/respond.src.js"></script>
+    <script src="bower_components/angular-promise-tracker/promise-tracker.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/scripts.js -->
+    <script src="scripts/myapp.js"></script>
+    <script src="scripts/myapp/controllers.js"></script>
+    <!-- endbuild -->
+
+  </body>
+</html>
